@@ -1,0 +1,21 @@
+[package]
+name = "oxc_ex_native"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "oxc_ex_native"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+miette = "7.2.0"
+oxc_allocator = "0.15.0"
+oxc_ast = "0.15.0"
+oxc_codegen = "0.15.0"
+oxc_minifier = "0.15.0"
+oxc_parser = "0.15.0"
+oxc_span = "0.15.0"
+rustler = { version = "0.33.0", features = ["serde"] }
+serde_json = "1.0.117"
